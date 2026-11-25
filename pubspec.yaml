@@ -1,0 +1,80 @@
+name: picknship
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Core & Auth
+  # Firebase Core & Auth
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.19.6
+  cloud_firestore: ^4.17.0
+  firebase_messaging: ^14.7.10
+
+  # State Management
+  provider: ^6.1.1
+
+  # UI & Utilities
+  cupertino_icons: ^1.0.6
+  google_fonts: ^6.1.0
+  pinput: any              # OTP input fields
+  intl: 0.20.2            # Date formatting
+  uuid: ^4.2.1             # Generate unique IDs
+
+  # Maps & Location (Milestone 3)
+  flutter_map: ^6.1.0       # OpenStreetMap widget
+  latlong2: ^0.9.0           # Lat/Lng data type
+  geolocator: ^11.0.0       # GPS location
+  google_sign_in: ^6.2.1    # Google account login
+  url_launcher: ^6.2.5      # Open phone dialer, URLs
+  image_picker: ^1.0.7      # Pick photo from camera/gallery
+  flutter_local_notifications: ^17.0.0  # Local push notifications
+
+  # Charts (Admin Dashboard)
+  fl_chart: ^0.65.0          # Analytics charts
+  go_router: ^18.1.4
+  hugeicons: ^4.4.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
